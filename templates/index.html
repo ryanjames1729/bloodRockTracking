@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Blood Rock 100</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h3 style="color:red">Blood Rock 100 - Tracking Ryan James</h3>
+      </div>
+    </div>
+    <p id="timer" style="text-align:center; font-size:22px"></p>
+    <table class="table table-striped table-hover table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Aid Station</th>
+      <th>Time at AS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <td>1</td>
+      <td id="as1-name">Dam AS (3.2 mi)</td>
+      <td><strong id="as1">{{ checkin[0] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>2</td>
+      <td>Eagle Nest Trail (11.8 mi)</td>
+      <td><strong id="as2">{{ checkin[1] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>3</td>
+      <td>The Cabins (16.0 mi)</td>
+      <td><strong id="as3">{{ checkin[2] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>4</td>
+      <td>Terrace Drive 1 (23.5 mi)</td>
+      <td><strong id="as4">{{ checkin[3] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>5</td>
+      <td>Terrace Drive 2 (28.6 mi)</td>
+      <td><strong id="as5">{{ checkin[4] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>6</td>
+      <td>High Crest (36.4 mi)</td>
+      <td><strong id="as6">{{ checkin[5] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>7</td>
+      <td>Peavine Falls (42.9 mi)</td>
+      <td><strong id="as7">{{ checkin[6] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>8</td>
+      <td>The Cabin (50.9 mi)</td>
+      <td><strong id="as8">{{ checkin[7] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>9</td>
+      <td>Dam Aid Station (54.1 mi)</td>
+      <td><strong id="as9">{{ checkin[8] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>10</td>
+      <td>Eagle Nest Trail (62.7 mi)</td>
+      <td><strong id="as10">{{ checkin[9] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>11</td>
+      <td>The Cabins (66.9 mi)</td>
+      <td><strong id="as11">{{ checkin[10] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>12</td>
+      <td>Terrace Drive 1 (74.4 mi)</td>
+      <td><strong id="as12">{{ checkin[11] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>13</td>
+      <td>Terrace Drive 2 (79.5 mi)</td>
+      <td><strong id="as13">{{ checkin[12] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>14</td>
+      <td>High Crest (87.3 mi)</td>
+      <td><strong id="as14">{{ checkin[13] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>15</td>
+      <td>Peavine Falls (93.8 mi)</td>
+      <td><strong id="as15">{{ checkin[14] }}</strong></td>
+    </tr>
+    <tr class="table-active">
+      <td>Finish</td>
+      <td>The Cabin (101.8 mi)</td>
+      <td><strong id="as16">{{ checkin[15] }}</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+function update(){
+  $("#as1").load("/ #as1");
+  $("#as2").load("/ #as2");
+  $("#as3").load("/ #as3");
+  $("#as4").load("/ #as4");
+  $("#as5").load("/ #as5");
+  $("#as6").load("/ #as6");
+  $("#as7").load("/ #as7");
+  $("#as8").load("/ #as8");
+  $("#as9").load("/ #as9");
+  $("#as10").load("/ #as10");
+  $("#as11").load("/ #as11");
+  $("#as12").load("/ #as12");
+  $("#as13").load("/ #as13");
+  $("#as14").load("/ #as14");
+  $("#as15").load("/ #as15");
+  $("#as16").load("/ #as16");
+
+};
+setInterval(update,1000)
+</script>
+
+
+  </body>
+  <footer>
+    <h6>Made by Ryan James</h6>
+  </footer>
+</html>
